@@ -2,9 +2,7 @@ package latihan_pbo.tugas;
 
 import java.util.Scanner;
 
-// Class 1: Logika Perhitungan (Data Tersembunyi/Private)
 class BangunDatar {
-    // Atribut menggunakan Private (-) sesuai materi Pertemuan 3
     private double sisi;
     private double panjang;
     private double lebar;
@@ -13,7 +11,6 @@ class BangunDatar {
     private double diagonal1;
     private double diagonal2;
 
-    // Method Setter (+) untuk mengisi data (Public)
     public void setPersegi(double s) {
         this.sisi = s;
     }
@@ -34,7 +31,6 @@ class BangunDatar {
         this.sisi = s;
     }
 
-    // Method Getter (+) untuk Luas
     public double getLuasPersegi() {
         return sisi * sisi;
     }
@@ -51,7 +47,6 @@ class BangunDatar {
         return 0.5 * diagonal1 * diagonal2;
     }
 
-    // Method Getter (+) untuk Keliling
     public double getKelilingPersegi() {
         return 4 * sisi;
     }
@@ -69,7 +64,6 @@ class BangunDatar {
     }
 }
 
-// Class 2: Main Class (Eksekusi Program)
 public class Tugas2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

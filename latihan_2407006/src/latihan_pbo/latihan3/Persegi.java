@@ -10,4 +10,3 @@ public class Persegi extends BangunDatar{
         return 4*getSisi();
     }
 }
-
