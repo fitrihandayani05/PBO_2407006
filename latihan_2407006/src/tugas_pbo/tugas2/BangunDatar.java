@@ -1,4 +1,4 @@
-package latihan_pbo.tugas2;
+package tugas_pbo.tugas2;
 
 public class BangunDatar {
     protected double panjang;

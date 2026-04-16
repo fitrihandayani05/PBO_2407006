@@ -2,22 +2,24 @@ package latihan_pbo.latihan4;
 
 public class Menu {
     private String nama;
-    private double harga;
 
-    public Menu(String nama, double harga) {
+    public Menu(String nama) {
         this.nama = nama;
-        this.harga = harga;
     }
 
-    public String getNama() { return nama; }
-    public double getHarga() { return harga; }
+    public String getNama() {
+        return nama;
+    }
 
-    public double hitungTotal(double jumlah) {
-        return this.harga * jumlah;
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public double hitungTotal() {
+        return 0;
     }
 
     public void tampilkan() {
-        System.out.println("Nama: " + this.nama);
-        System.out.println("Harga: " + this.harga);
+        System.out.print(nama);
     }
 }

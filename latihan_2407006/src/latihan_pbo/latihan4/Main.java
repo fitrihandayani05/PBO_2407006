@@ -2,15 +2,20 @@ package latihan_pbo.latihan4;
 
 public class Main {
     public static void main(String[] args) {
-        Menu[] daftarMenu = {
-            new MenuItem("Ketoprak", 12000), 
-            new MenuItem("Nasi Goreng", 15000),
-            new MenuItem("Es Teh", 5000)
-        };
+        Menu pesanan;
 
-        for (Menu m : daftarMenu) {
-            m.tampilkan();
-            System.out.println("----------------------------");
-        }
+        System.out.println("--- DAFTAR PESANAN ---");
+
+        pesanan = new MenuItem("Nasi Goreng", 2, 12000);
+        pesanan.tampilkan();
+        System.out.println("------------------------------");
+
+        pesanan = new MenuItem("Es Teh", 3, 3000);
+        pesanan.tampilkan();
+        System.out.println("------------------------------");
+
+        pesanan = new MenuItem("Mie Ayam", 3, 13000);
+        pesanan.tampilkan();
+        System.out.println("------------------------------");
     }
 }

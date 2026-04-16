@@ -1,4 +1,4 @@
-package latihan_pbo.tugas3;
+package tugas_pbo.tugas3;
 
 public class Segitiga extends BangunDatar {
     public Segitiga(double alas, double tinggi) {

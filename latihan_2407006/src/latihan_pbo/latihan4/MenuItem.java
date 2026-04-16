@@ -1,18 +1,23 @@
 package latihan_pbo.latihan4;
 
 public class MenuItem extends Menu {
-    public MenuItem(String nama, double harga) {
-        super(nama, harga);
+    private int jumlah;
+    private double harga;
+
+    public MenuItem(String nama, int jumlah, double harga) {
+        super(nama); 
+        this.jumlah = jumlah;
+        this.harga = harga;
     }
 
-    @Override // Sekarang ini tidak akan error karena parameternya sama-sama DOUBLE
-    public double hitungTotal(double jumlah) {
-        return getHarga() * jumlah;
+    @Override
+    public double hitungTotal() {
+        return harga * jumlah;
     }
 
     @Override
     public void tampilkan() {
-        super.tampilkan();
-        System.out.println("Total jika beli 5: " + hitungTotal(5));
+        System.out.printf("%-15s %10.0f (x%d)\n", getNama(), harga, jumlah);
+        System.out.println("Total: " + hitungTotal());
     }
 }

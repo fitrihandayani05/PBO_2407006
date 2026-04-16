@@ -1,4 +1,4 @@
-package latihan_pbo.tugas;
+package tugas_pbo.tugas;
 
 public class BangunRuang {
     
